@@ -1,0 +1,37 @@
+<UserControl x:Class="MedImage.App.Views.SignupView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="#1E1E24">
+        <Border Width="360" Padding="28" CornerRadius="10" Background="#2A2A33"
+                VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="Create account" FontSize="24" FontWeight="Bold" Foreground="#E6E6EA"/>
+                <TextBlock Text="Register to start annotating" Foreground="#9A9AA6" Margin="0,2,0,20"/>
+
+                <TextBlock Text="Username" Foreground="#C8C8D0"/>
+                <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"
+                         Padding="6" Margin="0,4,0,12"/>
+
+                <TextBlock Text="Password" Foreground="#C8C8D0"/>
+                <PasswordBox x:Name="PasswordBox" Padding="6" Margin="0,4,0,12"
+                             PasswordChanged="PasswordBox_PasswordChanged"/>
+
+                <TextBlock Text="Confirm password" Foreground="#C8C8D0"/>
+                <PasswordBox x:Name="ConfirmBox" Padding="6" Margin="0,4,0,12"
+                             PasswordChanged="ConfirmBox_PasswordChanged"/>
+
+                <TextBlock Text="{Binding Error}" Foreground="#FF6B6B" TextWrapping="Wrap"
+                           Margin="0,0,0,10"
+                           Visibility="{Binding Error, Converter={StaticResource StringToVis}}"/>
+
+                <Button Content="Register" Height="38" Command="{Binding RegisterCommand}"
+                        IsEnabled="{Binding IsBusy, Converter={StaticResource InverseBool}}"
+                        Background="#4C6FFF" Foreground="White" BorderThickness="0" Cursor="Hand"/>
+
+                <Button Content="Back to sign in" Margin="0,10,0,0"
+                        Command="{Binding GoToLoginCommand}"
+                        Background="Transparent" Foreground="#9AB0FF" BorderThickness="0" Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
