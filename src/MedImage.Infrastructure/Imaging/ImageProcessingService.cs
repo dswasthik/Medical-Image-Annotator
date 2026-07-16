@@ -12,7 +12,7 @@ public sealed class ImageProcessingService : IImageProcessingService, IDisposabl
 
     public ImageProcessingService(IImageFilterFactory factory) => _factory = factory;
 
-    public bool HasImage => _original is { Empty: false };
+    public bool HasImage => _original is not null && !_original.Empty();
     public int Width => _original?.Width ?? 0;
     public int Height => _original?.Height ?? 0;
 

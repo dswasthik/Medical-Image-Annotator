@@ -110,7 +110,7 @@
                     <DockPanel Margin="0,12,0,0">
                         <TextBlock Text="Measurements" FontWeight="Bold"/>
                         <Button DockPanel.Dock="Right" Content="Clear" Padding="8,2"
-                                Command="{Binding ClearMeasurementsCommand}"/>
+                                Command="{Binding ClearMeasurementsCommand}" Width="84"/>
                     </DockPanel>
                     <ItemsControl ItemsSource="{Binding Measurements}" Margin="0,6,0,0">
                         <ItemsControl.ItemTemplate>
@@ -122,9 +122,18 @@
                 </StackPanel>
 
                 <DockPanel Grid.Row="1" Margin="14,4,14,4">
-                    <TextBlock Text="My studies" FontWeight="Bold"/>
+                    <TextBlock Text="My studies" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.969"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="0.516"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
                     <Button DockPanel.Dock="Right" Content="Refresh" Padding="8,2"
-                            Command="{Binding RefreshHistoryCommand}"/>
+                            Command="{Binding RefreshHistoryCommand}" Width="84" RenderTransformOrigin="0.897,0.529"/>
                 </DockPanel>
 
                 <Grid Grid.Row="2" Margin="14,0,14,14">

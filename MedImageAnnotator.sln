@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.9.34701.34
+# SQL Server Management Studio Version 22
+VisualStudioVersion = 18.6.11806.211 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedImage.Domain", "src\MedImage.Domain\MedImage.Domain.csproj", "{FA0DC20E-B424-41D6-997C-F78063959A40}"
 EndProject
@@ -11,23 +11,33 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Default|Any CPU = Default|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FA0DC20E-B424-41D6-997C-F78063959A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA0DC20E-B424-41D6-997C-F78063959A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA0DC20E-B424-41D6-997C-F78063959A40}.Default|Any CPU.ActiveCfg = Release|Any CPU
 		{FA0DC20E-B424-41D6-997C-F78063959A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA0DC20E-B424-41D6-997C-F78063959A40}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5BBFD92D-C8AA-4491-AF3C-45F2CDB493DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5BBFD92D-C8AA-4491-AF3C-45F2CDB493DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBFD92D-C8AA-4491-AF3C-45F2CDB493DF}.Default|Any CPU.ActiveCfg = Release|Any CPU
 		{5BBFD92D-C8AA-4491-AF3C-45F2CDB493DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BBFD92D-C8AA-4491-AF3C-45F2CDB493DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{65E2A675-FCA5-4ECE-80A5-93E3E4D0B8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65E2A675-FCA5-4ECE-80A5-93E3E4D0B8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E2A675-FCA5-4ECE-80A5-93E3E4D0B8EA}.Default|Any CPU.ActiveCfg = Release|Any CPU
 		{65E2A675-FCA5-4ECE-80A5-93E3E4D0B8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65E2A675-FCA5-4ECE-80A5-93E3E4D0B8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDAE734-B3F0-47FB-B81A-EB0D6A50492E}.Debug|Any CPU.ActiveCfg = Default
+		{EBDAE734-B3F0-47FB-B81A-EB0D6A50492E}.Default|Any CPU.ActiveCfg = Default
+		{EBDAE734-B3F0-47FB-B81A-EB0D6A50492E}.Release|Any CPU.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3D8713B-3876-4F70-845A-3842C2ECAA48}
 	EndGlobalSection
 EndGlobal
